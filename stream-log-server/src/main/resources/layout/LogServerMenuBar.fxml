@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<fx:root type="MenuBar" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<menus>
+		<Menu mnemonicParsing="false" text="File">
+			<items>
+            <MenuItem fx:id="newServer" mnemonicParsing="false" text="New Server...">
+               <accelerator>
+                  <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator>
+            </MenuItem>
+            <SeparatorMenuItem mnemonicParsing="false" />
+				<MenuItem fx:id="save" disable="true" mnemonicParsing="false" text="Save">
+					<accelerator>
+						<KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+					</accelerator>
+				</MenuItem>
+				<MenuItem fx:id="saveAs" disable="true" mnemonicParsing="false" text="Save as...">
+					<accelerator>
+						<KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+					</accelerator>
+				</MenuItem>
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem fx:id="disconnect" disable="true" mnemonicParsing="false" text="Disconnect">
+               <accelerator>
+                  <KeyCodeCombination alt="UP" code="W" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+               </accelerator>
+            </MenuItem>
+				<MenuItem fx:id="close" disable="true" mnemonicParsing="false" text="Close">
+					<accelerator>
+						<KeyCodeCombination alt="UP" code="W" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+					</accelerator>
+				</MenuItem>
+				<SeparatorMenuItem mnemonicParsing="false" />
+				<MenuItem fx:id="exit" mnemonicParsing="false" text="Exit">
+					<accelerator>
+						<KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+					</accelerator>
+				</MenuItem>
+			</items>
+		</Menu>
+		<Menu mnemonicParsing="false" text="Edit">
+			<items>
+				<MenuItem fx:id="clear" mnemonicParsing="false" text="Clear">
+               <accelerator>
+                  <KeyCodeCombination alt="UP" code="X" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+               </accelerator></MenuItem>
+			</items>
+		</Menu>
+		<Menu mnemonicParsing="false" text="Help">
+			<items>
+				<MenuItem fx:id="about" mnemonicParsing="false" text="About">
+					<accelerator>
+						<KeyCodeCombination alt="UP" code="F1" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+					</accelerator>
+				</MenuItem>
+			</items>
+		</Menu>
+	</menus>
+</fx:root>

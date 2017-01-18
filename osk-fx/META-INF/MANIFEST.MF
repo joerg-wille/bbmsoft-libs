@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OSK
+Bundle-SymbolicName: net.bbmsoft.osk
+Bundle-Version: 1.1.7
+Require-Bundle: org.eclipse.xtend.lib;bundle-version="2.8.2"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: net.bbmsoft.fxtended.annotations.binding,
+ net.bbmsoft.fxtended.annotations.css,
+ net.bbmsoft.fxtended.extensions
+Export-Package: net.bbmsoft.fx.osk
+ 

@@ -1,0 +1,47 @@
+.shift_r .icon, .shift_l .icon {
+	visibility: true;
+	-fx-shape: "M 0 11 H 4 V 23 H 10 V 11 H 14 L 7 0 Z";
+	-fx-padding: 9 7.5 9 7.5;
+}
+
+.caps .icon {
+	visibility: true;
+	-fx-shape: "M 0 12 H 4 V 6.5 H 10 V 12 H 14 L 7 23 Z M 4 0 V 4.5 H 10 V 0 H 4 Z";
+	-fx-padding: 9 7.5 9 7.5;
+}
+
+.arrow_up .icon {
+	visibility: true;
+	-fx-shape: "M 0 11 H 4 V 23 H 10 V 11 H 14 L 7 0 Z";
+	-fx-padding: 9 7.5 9 7.5;
+}
+
+.arrow_down .icon {
+	visibility: true;
+	-fx-shape: "M 0 12 H 4 V 0 H 10 V 12 H 14 L 7 23 Z";
+	-fx-padding: 9 7.5 9 7.5;
+}
+
+.arrow_left .icon {
+	visibility: true;
+	-fx-shape: "M 0 7 L 11 0 V 4 H 23 V 10 H 11 V 14 Z";
+	-fx-padding: 7.5 9 7.5 9;
+}
+
+.arrow_right .icon {
+	visibility: true;
+	-fx-shape: "M 23 7 L 12 0 V 4 H 0 V 10 H 12 V 14 Z";
+	-fx-padding: 7.5 9 7.5 9;
+}
+
+.backspace .icon {
+	visibility: true;
+	-fx-shape: "M 0 7 L 11 0 V 4 H 35 V 10 H 11 V 14 Z";
+	-fx-padding: 7.5 13.5 7.5 13.5;
+}
+
+.return .icon {
+	visibility: true;
+	-fx-shape: "M 0 7 L 11 0 V 4 H 22 V 0 H 31 V 10 H 11 V 14 Z";
+	-fx-padding: 7.5 12 7.5 12;
+}

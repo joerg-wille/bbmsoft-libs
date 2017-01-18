@@ -1,0 +1,11 @@
+.hg/
+target/
+bin/
+
+*.classpath
+*.project
+.settings/
+*._trace
+*.class
+*.xtendbin
+*.hg*

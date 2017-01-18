@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: FXtended Runtime
+Bundle-SymbolicName: net.bbmsoft.fxtended-runtime
+Bundle-Version: 1.2.1
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.xtend.lib
+Export-Package: net.bbmsoft.fxtended.annotations.binding.properties.ranged,
+ net.bbmsoft.fxtended.extensions
+Import-Package: com.google.inject,
+ com.google.inject.binder

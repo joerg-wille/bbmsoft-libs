@@ -1,0 +1,70 @@
+#osk {
+	
+	-fx-hgap: 8;
+	-fx-vgap: 8;
+	-fx-padding: 18;
+
+	-fx-background-insets: 0, 5, 6;
+	-fx-background-radius: 12, 7, 6;
+	
+	-fx-snap-to-pixel: true;
+	
+	-lock-shift: true;
+}
+
+#osk #inputIndicator {
+	-fx-font-size: 1.6em;
+}
+
+#osk #dragSpacer {
+	-fx-padding: 0;
+}
+
+.key-button {
+	-key-base-size: 75;
+	-fx-padding: 6 8 6 8;
+}
+
+.key-button .text {
+	-fx-font-size: 1.4em;
+}
+
+.key-block, .key-row {
+	-fx-spacing: 6;
+}
+
+.key-grid {
+	-fx-alignment: center;
+}
+
+.esc .text,
+.tab .text,
+.control_l .text,
+.control_r .text,
+.alt_l .text,
+.alt_r .text,
+.alt_graph .text,
+.context_menu .text,
+.enter .text,
+.delete .text {
+	-fx-font-size: 1.1em;
+}
+
+.tab .key-grid,
+.control_l .key-grid,
+.control_r .key-grid,
+.alt_l .key-grid,
+.alt_r .key-grid,
+.alt_graph .key-grid,
+.context_menu .key-grid {
+	-fx-alignment: bottom-left;
+}
+
+.esc .key-grid,
+.delete .key-grid {
+	-fx-alignment: top-left;
+}
+
+.key-button .default-label {
+	-fx-font-size: 2em;
+}

@@ -1,0 +1,107 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>bbm-update-site</artifactId>
+	<name>BBM Libraries update site</name>
+
+	<parent>
+		<groupId>net.bbmsoft</groupId>
+		<artifactId>bbm-p2-repository</artifactId>
+		<version>1.0.4</version>
+	</parent>
+
+	<packaging>eclipse-repository</packaging>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>net.bbmsoft</groupId>
+			<artifactId>fxtended</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>net.bbmsoft</groupId>
+			<artifactId>fxtended-runtime</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>net.bbmsoft</groupId>
+			<artifactId>fxml-inject</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.bbmsoft</groupId>
+			<artifactId>ui-properties</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.bbmsoft</groupId>
+			<artifactId>stream-log-server</artifactId>
+			<version>1.0.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.bbmsoft</groupId>
+			<artifactId>osk-fx</artifactId>
+			<version>1.1.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.bbmsoft</groupId>
+			<artifactId>bbm-utils</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.eclipse.xtend</groupId>
+			<artifactId>org.eclipse.xtend.lib</artifactId>
+			<version>2.8.2</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/repository</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${basedir}</directory>
+									<includes>
+										<include>index.html</include>
+										<include>site.css</include>
+										<include>site.xsl</include>
+										<include>category.xml</include>
+									</includes>
+								</resource>
+								<resource>
+									<directory>${basedir}/web</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+		</plugins>
+	</build>
+
+
+</project>

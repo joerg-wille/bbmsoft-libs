@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import net.bbmsoft.fx.osk.impl.components.KeyButton?>
+<?import net.bbmsoft.fx.osk.impl.layout.KeyCode?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ToggleButton?>
+
+<fx:root type="GridPane" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:id="osk">
+
+	<TextField  fx:id="inputIndicator" GridPane.columnIndex="0"
+		GridPane.rowIndex="0" />
+
+	<Pane  fx:id="dragSpacer" GridPane.columnIndex="0"
+		GridPane.rowIndex="1" />
+
+	<VBox fx:id="mainBlock" GridPane.columnIndex="0"
+		GridPane.rowIndex="2" styleClass="key-block">
+
+		<HBox fx:id="numbers" styleClass="key-row">
+			<KeyButton code="ESC" />
+			<KeyButton code="DIGIT1" />
+			<KeyButton code="DIGIT2" />
+			<KeyButton code="DIGIT3" />
+			<KeyButton code="DIGIT4" />
+			<KeyButton code="DIGIT5" />
+			<KeyButton code="DIGIT6" />
+			<KeyButton code="DIGIT7" />
+			<KeyButton code="DIGIT8" />
+			<KeyButton code="DIGIT9" />
+			<KeyButton code="DIGIT0" />
+			<KeyButton code="SPECIAL_1" />
+			<KeyButton code="SPECIAL_2" />
+			<KeyButton code="BACKSPACE" sizeFactor="2" />
+		</HBox>
+
+		<HBox fx:id="qwerty" styleClass="key-row">
+			<KeyButton code="TAB" sizeFactor="1.5" />
+			<KeyButton code="Q" />
+			<KeyButton code="W" />
+			<KeyButton code="E" />
+			<KeyButton code="R" />
+			<KeyButton code="T" />
+			<KeyButton code="Y" />
+			<KeyButton code="U" />
+			<KeyButton code="I" />
+			<KeyButton code="O" />
+			<KeyButton code="P" />
+			<KeyButton code="SPECIAL_3" />
+			<KeyButton code="SPECIAL_4" />
+			<KeyButton code="SPECIAL_5" HBox.hgrow="ALWAYS" />
+		</HBox>
+
+		<HBox fx:id="asdf" styleClass="key-row">
+			<KeyButton code="CAPS" sizeFactor="2" />
+			<KeyButton code="A" />
+			<KeyButton code="S" />
+			<KeyButton code="D" />
+			<KeyButton code="F" />
+			<KeyButton code="G" />
+			<KeyButton code="H" />
+			<KeyButton code="J" />
+			<KeyButton code="K" />
+			<KeyButton code="L" />
+			<KeyButton code="SPECIAL_6" />
+			<KeyButton code="SPECIAL_7" />
+			<KeyButton code="RETURN" HBox.hgrow="ALWAYS" />
+		</HBox>
+
+		<HBox fx:id="zxcv" styleClass="key-row">
+			<KeyButton code="SHIFT_L" sizeFactor="2.5" />
+			<KeyButton code="Z" />
+			<KeyButton code="X" />
+			<KeyButton code="C" />
+			<KeyButton code="V" />
+			<KeyButton code="B" />
+			<KeyButton code="N" />
+			<KeyButton code="M" />
+			<KeyButton code="SPECIAL_8" />
+			<KeyButton code="SPECIAL_9" />
+			<KeyButton code="SPECIAL_10" />
+			<KeyButton code="SHIFT_R" HBox.hgrow="ALWAYS" />
+		</HBox>
+
+		<HBox fx:id="controls" styleClass="key-row">
+			<KeyButton code="CONTROL_L" />
+			<KeyButton code="CONTEXT_MENU" />
+			<KeyButton code="ALT_GRAPH" />
+			<KeyButton code="SPACE" HBox.hgrow="ALWAYS" />
+			<KeyButton code="ARROW_UP" />
+			<KeyButton code="ARROW_DOWN" />
+			<KeyButton code="ARROW_LEFT" />
+			<KeyButton code="ARROW_RIGHT" />
+		</HBox>
+
+	</VBox>
+
+</fx:root>

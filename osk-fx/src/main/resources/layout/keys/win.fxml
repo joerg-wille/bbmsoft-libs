@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import net.bbmsoft.fx.osk.impl.layout.*?>
+
+<OSKLayout name="en_UK_win" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1">
+
+	<KeyBinding code="A" defaultChar="%defaultA" shiftChar="%shiftA" altChar="%altA" />
+	<KeyBinding code="B" defaultChar="%defaultB" shiftChar="%shiftB" altChar="%altB" />
+	<KeyBinding code="C" defaultChar="%defaultC" shiftChar="%shiftC" altChar="%altC" />
+	<KeyBinding code="D" defaultChar="%defaultD" shiftChar="%shiftD" altChar="%altD" />
+	<KeyBinding code="E" defaultChar="%defaultE" shiftChar="%shiftE" altChar="%altE" />
+	<KeyBinding code="F" defaultChar="%defaultF" shiftChar="%shiftF" altChar="%altF" />
+	<KeyBinding code="G" defaultChar="%defaultG" shiftChar="%shiftG" altChar="%altG" />
+	<KeyBinding code="H" defaultChar="%defaultH" shiftChar="%shiftH" altChar="%altH" />
+	<KeyBinding code="I" defaultChar="%defaultI" shiftChar="%shiftI" altChar="%altI" />
+	<KeyBinding code="J" defaultChar="%defaultJ" shiftChar="%shiftJ" altChar="%altJ" />
+	<KeyBinding code="K" defaultChar="%defaultK" shiftChar="%shiftK" altChar="%altK" />
+	<KeyBinding code="L" defaultChar="%defaultL" shiftChar="%shiftL" altChar="%altL" />
+	<KeyBinding code="M" defaultChar="%defaultM" shiftChar="%shiftM" altChar="%altM" />
+	<KeyBinding code="N" defaultChar="%defaultN" shiftChar="%shiftN" altChar="%altN" />
+	<KeyBinding code="O" defaultChar="%defaultO" shiftChar="%shiftO" altChar="%altO" />
+	<KeyBinding code="P" defaultChar="%defaultP" shiftChar="%shiftP" altChar="%altP" />
+	<KeyBinding code="Q" defaultChar="%defaultQ" shiftChar="%shiftQ" altChar="%altQ"/>
+	<KeyBinding code="R" defaultChar="%defaultR" shiftChar="%shiftR" altChar="%altR" />
+	<KeyBinding code="S" defaultChar="%defaultS" shiftChar="%shiftS" altChar="%altS" />
+	<KeyBinding code="T" defaultChar="%defaultT" shiftChar="%shiftT" altChar="%altT" />
+	<KeyBinding code="U" defaultChar="%defaultU" shiftChar="%shiftU" altChar="%altU" />
+	<KeyBinding code="V" defaultChar="%defaultV" shiftChar="%shiftV" altChar="%altV" />
+	<KeyBinding code="W" defaultChar="%defaultW" shiftChar="%shiftW" altChar="%altW" />
+	<KeyBinding code="X" defaultChar="%defaultX" shiftChar="%shiftX" altChar="%altX" />
+	<KeyBinding code="Y" defaultChar="%defaultY" shiftChar="%shiftY" altChar="%altY" />
+	<KeyBinding code="Z" defaultChar="%defaultZ" shiftChar="%shiftZ" altChar="%altZ" />
+
+	<KeyBinding code="SPACE" defaultChar="%spaceDefault" shiftChar="%spaceDefault" />
+
+	<KeyBinding code="DIGIT1" defaultChar="%digit1default" shiftChar="%digit1shift" />
+	<KeyBinding code="DIGIT2" defaultChar="%digit2default" shiftChar="%digit2shift" />
+	<KeyBinding code="DIGIT3" defaultChar="%digit3default" shiftChar="%digit3shift" />
+	<KeyBinding code="DIGIT4" defaultChar="%digit4default" shiftChar="%digit4shift" />
+	<KeyBinding code="DIGIT5" defaultChar="%digit5default" shiftChar="%digit5shift" />
+	<KeyBinding code="DIGIT6" defaultChar="%digit6default" shiftChar="%digit6shift" />
+	<KeyBinding code="DIGIT7" defaultChar="%digit7default" shiftChar="%digit7shift" />
+	<KeyBinding code="DIGIT8" defaultChar="%digit8default" shiftChar="%digit8shift" />
+	<KeyBinding code="DIGIT9" defaultChar="%digit9default" shiftChar="%digit9shift" />
+	<KeyBinding code="DIGIT0" defaultChar="%digit0default" shiftChar="%digit0shift" />
+
+	<KeyBinding code="NUMPAD_1" defaultChar="%numpad1default" />
+	<KeyBinding code="NUMPAD_2" defaultChar="%numpad2default" />
+	<KeyBinding code="NUMPAD_3" defaultChar="%numpad3default" />
+	<KeyBinding code="NUMPAD_4" defaultChar="%numpad4default" />
+	<KeyBinding code="NUMPAD_5" defaultChar="%numpad5default" />
+	<KeyBinding code="NUMPAD_6" defaultChar="%numpad6default" />
+	<KeyBinding code="NUMPAD_7" defaultChar="%numpad7default" />
+	<KeyBinding code="NUMPAD_8" defaultChar="%numpad8default" />
+	<KeyBinding code="NUMPAD_9" defaultChar="%numpad9default" />
+	<KeyBinding code="NUMPAD_0" defaultChar="%numpad0default" />
+	<KeyBinding code="NUMPAD_PLUS" defaultChar="%numpadPlusdefault" />
+	<KeyBinding code="NUMPAD_MINUS" defaultChar="%numpadMinusdefault" />
+	<KeyBinding code="NUMPAD_PERIOD" defaultChar="%numpadDecimaldefault" />
+
+	<KeyBinding code="SPECIAL_0" defaultChar="%special0default" shiftChar="%special0shift" altChar="%special0alt" />
+	<KeyBinding code="SPECIAL_1" defaultChar="%special1default" shiftChar="%special1shift" altChar="%special1alt" />
+	<KeyBinding code="SPECIAL_2" defaultChar="%special2default" shiftChar="%special2shift" altChar="%special2alt" />
+	<KeyBinding code="SPECIAL_3" defaultChar="%special3default" shiftChar="%special3shift" altChar="%special3alt" />
+	<KeyBinding code="SPECIAL_4" defaultChar="%special4default" shiftChar="%special4shift" altChar="%special4alt" />
+	<KeyBinding code="SPECIAL_5" defaultChar="%special5default" shiftChar="%special5shift" altChar="%special5alt" />
+	<KeyBinding code="SPECIAL_6" defaultChar="%special6default" shiftChar="%special6shift" altChar="%special6alt" />
+	<KeyBinding code="SPECIAL_7" defaultChar="%special7default" shiftChar="%special7shift" altChar="%special7alt" />
+	<KeyBinding code="SPECIAL_8" defaultChar="%special8default" shiftChar="%special8shift" altChar="%special8alt" />
+	<KeyBinding code="SPECIAL_9" defaultChar="%special9default" shiftChar="%special9shift" altChar="%special9alt" />
+	<KeyBinding code="SPECIAL_10" defaultChar="%special10default" shiftChar="%special10shift" altChar="%special10alt" />
+
+	<KeyBinding code="ESC" defaultChar="Esc" />
+	<KeyBinding code="ALT_L" defaultChar="Alt" />
+	<KeyBinding code="ALT_R" defaultChar="Alt" />
+	<KeyBinding code="ALT_GRAPH" defaultChar="Alt Gr" />
+	<KeyBinding code="CONTROL_L" defaultChar="Ctrl" />
+	<KeyBinding code="CONTROL_R" defaultChar="Ctrl" />
+	<KeyBinding code="CONTEXT_MENU" defaultChar="Menu" />
+	<KeyBinding code="TAB" defaultChar="Tab" />
+	<KeyBinding code="DELETE" defaultChar="Del" />
+	<KeyBinding code="ENTER" defaultChar="Enter" />
+
+	<KeyBinding code="SHIFT_L" defaultChar="Shift" />
+	<KeyBinding code="SHIFT_R" defaultChar="Shift" />
+	<KeyBinding code="CAPS" defaultChar="Caps" />
+
+	<KeyBinding code="ARROW_LEFT" defaultChar="Left" />
+	<KeyBinding code="ARROW_RIGHT" defaultChar="Right" />
+	<KeyBinding code="ARROW_UP" defaultChar="Up" />
+	<KeyBinding code="ARROW_DOWN" defaultChar="Down" />
+
+	<KeyBinding code="BACKSPACE" defaultChar="Backspace" />
+	<KeyBinding code="DELETE" defaultChar="Del" />
+
+
+	<KeyBinding code="ENTER" defaultChar="Enter" />
+	<KeyBinding code="RETURN" defaultChar="Return" />
+
+
+</OSKLayout>

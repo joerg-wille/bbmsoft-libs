@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import net.bbmsoft.fx.osk.impl.components.KeyButton?>
+<?import net.bbmsoft.fx.osk.impl.layout.KeyCode?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+
+<fx:root type="GridPane" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:id="osk">
+
+	<HBox fx:id="functionBlock" GridPane.columnIndex="0"
+		GridPane.rowIndex="0" styleClass="key-row">
+		<KeyButton code="ESC" />
+		<KeyButton code="BACKSPACE" HBox.hgrow="ALWAYS" />
+	</HBox>
+
+	<VBox fx:id="mainBlock" GridPane.columnIndex="0"
+		GridPane.rowIndex="1" styleClass="key-row">
+
+		<HBox fx:id="789" styleClass="key-row">
+			<KeyButton code="NUMPAD_7" />
+			<KeyButton code="NUMPAD_8" />
+			<KeyButton code="NUMPAD_9" />
+		</HBox>
+		<HBox fx:id="456" styleClass="key-row">
+			<KeyButton code="NUMPAD_4" />
+			<KeyButton code="NUMPAD_5" />
+			<KeyButton code="NUMPAD_6" />
+		</HBox>
+		<HBox fx:id="123" styleClass="key-row">
+			<KeyButton code="NUMPAD_1" />
+			<KeyButton code="NUMPAD_2" />
+			<KeyButton code="NUMPAD_3" />
+		</HBox>
+		<HBox fx:id="0" styleClass="key-row">
+			<KeyButton code="NUMPAD_0" HBox.hgrow="ALWAYS"/>
+			<KeyButton code="NUMPAD_PERIOD" />
+		</HBox>
+	</VBox>
+	<HBox fx:id="delete" GridPane.columnIndex="1"
+		GridPane.rowIndex="0" styleClass="key-row">
+		<KeyButton code="DELETE"/>
+	</HBox>
+	<VBox fx:id="controlBlock" GridPane.columnIndex="1"
+		GridPane.rowIndex="1" styleClass="key-row">
+		<KeyButton code="NUMPAD_MINUS" VBox.vgrow="ALWAYS"/>
+		<KeyButton code="ENTER" VBox.vgrow="ALWAYS"/>
+	</VBox>
+	<VBox fx:id="arrowBlock" GridPane.columnIndex="2"
+		GridPane.rowIndex="1"
+		styleClass="key-row">
+		<KeyButton code="ARROW_UP" VBox.vgrow="ALWAYS"/>
+		<KeyButton code="ARROW_DOWN" VBox.vgrow="ALWAYS"/>
+		<KeyButton code="ARROW_LEFT" VBox.vgrow="ALWAYS"/>
+		<KeyButton code="ARROW_RIGHT" VBox.vgrow="ALWAYS"/>
+	</VBox>
+
+</fx:root>
