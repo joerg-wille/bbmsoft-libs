@@ -9,4 +9,3 @@ Import-Package: net.bbmsoft.fxtended.annotations.binding,
  net.bbmsoft.fxtended.annotations.css,
  net.bbmsoft.fxtended.extensions
 Export-Package: net.bbmsoft.fx.osk
- 
