@@ -49,7 +49,7 @@
 		<dependency>
 			<groupId>net.bbmsoft</groupId>
 			<artifactId>osk-fx</artifactId>
-			<version>1.1.7</version>
+			<version>1.1.8</version>
 		</dependency>
 
 		<dependency>
