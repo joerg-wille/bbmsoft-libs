@@ -20,12 +20,10 @@
 
 	<modules>
 		<module>bbm-utils</module>
-		<module>rest</module>
 		<module>fxtended</module>
 		<module>fxtended-runtime</module>
 		<module>fxml-inject</module>
 		<module>osk-fx</module>
-		<module>jna-annotations</module>
 	</modules>
 
 	<build>

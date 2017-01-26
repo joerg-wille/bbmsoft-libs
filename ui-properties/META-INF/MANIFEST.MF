@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: UiProperties
-Bundle-SymbolicName: net.bbmsoft.ui-properties
-Bundle-Version: 1.0.1
-Export-Package: net.bbmsoft.ui.properties;uses:="javafx.beans.property,javafx.beans.value,javafx.beans"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
