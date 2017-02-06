@@ -21,17 +21,17 @@
 			<artifactId>fxtended</artifactId>
 			<version>1.2.1</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>net.bbmsoft</groupId>
 			<artifactId>fxtended-runtime</artifactId>
 			<version>1.2.2</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>net.bbmsoft</groupId>
 			<artifactId>fxml-inject</artifactId>
-			<version>1.2.1</version>
+			<version>1.2.2</version>
 		</dependency>
 
 		<dependency>
@@ -57,7 +57,7 @@
 			<artifactId>bbm-utils</artifactId>
 			<version>1.0.0</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.eclipse.xtend</groupId>
 			<artifactId>org.eclipse.xtend.lib</artifactId>

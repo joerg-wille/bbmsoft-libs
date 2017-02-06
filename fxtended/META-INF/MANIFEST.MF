@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: FXtended
 Bundle-SymbolicName: net.bbmsoft.fxtended
-Bundle-Version: 1.2.1
+Bundle-Version: 1.2.2
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: net.bbmsoft.fxtended.annotations.app,
  net.bbmsoft.fxtended.annotations.binding,

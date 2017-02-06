@@ -3,7 +3,7 @@
    <description name="BBM Libraries" url="http://p2.babymotte.de/">
       BBM Libraries
    </description>
-   <bundle id="net.bbmsoft.fxtended" version="1.2.1" label="FXtended">
+   <bundle id="net.bbmsoft.fxtended" version="1.2.2" label="FXtended">
       <category name="fxtended"/>
    </bundle>
    <bundle id="net.bbmsoft.fxtended-runtime" version="1.2.2" label="FXtended Runtime">
