@@ -36,18 +36,6 @@
 
 		<dependency>
 			<groupId>net.bbmsoft</groupId>
-			<artifactId>ui-properties</artifactId>
-			<version>1.0.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>net.bbmsoft</groupId>
-			<artifactId>stream-log-server</artifactId>
-			<version>1.0.4</version>
-		</dependency>
-
-		<dependency>
-			<groupId>net.bbmsoft</groupId>
 			<artifactId>osk-fx</artifactId>
 			<version>1.1.9</version>
 		</dependency>
