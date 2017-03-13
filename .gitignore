@@ -1,6 +1,7 @@
 .hg/
 target/
 bin/
+.idea/
 
 *.classpath
 *.project
@@ -9,3 +10,4 @@ bin/
 *.class
 *.xtendbin
 *.hg*
+*.iml

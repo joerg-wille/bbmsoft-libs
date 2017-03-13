@@ -54,13 +54,13 @@
 		<dependency>
 			<groupId>net.bbmsoft</groupId>
 			<artifactId>fxtended</artifactId>
-			<version>1.2.1</version>
+			<version>1.2.2</version>
 		</dependency>
 
 		<dependency>
 			<groupId>net.bbmsoft</groupId>
 			<artifactId>fxtended-runtime</artifactId>
-			<version>1.2.1</version>
+			<version>1.2.2</version>
 		</dependency>
 	</dependencies>
 </project>

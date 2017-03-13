@@ -1,12 +1,12 @@
-#BBMSoft Libraries
-
-##A Collection of reusable software components (mostly for JavaFX Applications)
+# BBMSoft Libraries
+[![Build Status](https://travis-ci.org/babymotte/bbmsoft-libs.svg?branch=master)](https://travis-ci.org/babymotte/bbmsoft-libs)
+## A Collection of reusable software components (mostly for JavaFX Applications)
 
 This will be split up into separate projects/repositories in the (hopefully) near future and then I will probably also take the time to write some proper documentation.
 
 Until then, if anything in here sounds interesting to you, please feel free to contact me.
 
-
+## License
 
 Everything in this repository is published under the Apache License, Version 2.0 (the "License");
 you may not use any of this software except in compliance with the License.
