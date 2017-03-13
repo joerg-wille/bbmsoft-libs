@@ -28,7 +28,7 @@ class SingletonCompilationParticipant implements TransformationParticipant<Mutab
 			
 			val instanceField = clazz.findInstanceFiled
 			
-			if(instanceField == null) {
+			if(instanceField === null) {
 				clazz.addField("instance")[
 					visibility = Visibility.PRIVATE
 					static = true
@@ -58,7 +58,7 @@ class SingletonCompilationParticipant implements TransformationParticipant<Mutab
 	
 	def findInstanceFiled(MutableClassDeclaration clazz) {
 		clazz.declaredFields.findFirst[it.simpleName == 'instance'] => [
-			if(it != null) {
+			if(it !== null) {
 				if(!Visibility.PRIVATE.equals(visibility)) {
 					addError("Instance of Singleton must be private")
 				}

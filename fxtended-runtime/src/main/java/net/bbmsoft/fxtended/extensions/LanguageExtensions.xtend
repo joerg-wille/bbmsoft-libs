@@ -79,7 +79,7 @@ class LanguageExtensions {
 			mainThrowable = e
 			throw e
 		} finally {
-			if (mainThrowable != null) {
+			if (mainThrowable !== null) {
 				resource.close
 			} else {
 				try {
@@ -101,7 +101,7 @@ class LanguageExtensions {
 			mainThrowable = e
 			throw e
 		} finally {
-			if (mainThrowable != null) {
+			if (mainThrowable !== null) {
 				resource.close
 			} else {
 				try {
@@ -136,7 +136,7 @@ class LanguageExtensions {
 			resource = resourceProvider.apply
 			procedure.apply(resource)
 		} catch (Throwable e) {
-			if (handler != null && handler.key.isAssignableFrom(e.class)) {
+			if (handler !== null && handler.key.isAssignableFrom(e.class)) {
 				handler.value.apply(handler.key.cast(e))
 			}
 		} finally {
@@ -152,7 +152,7 @@ class LanguageExtensions {
 		var T it = null
 		var T parent = object
 
-		while (parent != null) {
+		while (parent !== null) {
 			it = parent
 			parent = getParent.apply(it)
 		}

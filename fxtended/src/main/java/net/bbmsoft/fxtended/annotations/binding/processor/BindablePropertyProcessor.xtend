@@ -51,7 +51,7 @@ class BindablePropertyProcessor extends AbstractFieldProcessor {
 
 		if (type instanceof MutableClassDeclaration) {
 			val styleInfo = styleInfos.get(type)
-			if(styleInfo != null) type.addCssMetadata(styleInfo)
+			if(styleInfo !== null) type.addCssMetadata(styleInfo)
 		}
 	}
 
@@ -86,10 +86,10 @@ class BindablePropertyProcessor extends AbstractFieldProcessor {
 		val invalidatedMethodName = field.findAnnotation(invalidatedClass.newTypeReference.type)?.getValue('value')?.
 			toString
 
-		val oneArgMethod = if(invalidatedMethodName != null) clazz.findDeclaredMethod(invalidatedMethodName, fieldType)
-		val noArgMethod = if(invalidatedMethodName != null) clazz.findDeclaredMethod(invalidatedMethodName)
+		val oneArgMethod = if(invalidatedMethodName !== null) clazz.findDeclaredMethod(invalidatedMethodName, fieldType)
+		val noArgMethod = if(invalidatedMethodName !== null) clazz.findDeclaredMethod(invalidatedMethodName)
 
-		val argsCount = if(oneArgMethod != null) 1 else if(noArgMethod != null) 0 else -1
+		val argsCount = if(oneArgMethod !== null) 1 else if(noArgMethod !== null) 0 else -1
 
 		oneArgMethod?.markAsRead
 		noArgMethod?.markAsRead
@@ -137,7 +137,7 @@ class BindablePropertyProcessor extends AbstractFieldProcessor {
 
 		val pseudoClassAnnotationValue = field.findAnnotation(pseudoClassClass.newTypeReference.type)?.
 			getValue('value')?.toString
-		val pseudoClassName = if(pseudoClassAnnotationValue != null) pseudoClassAnnotationValue.transformPseudoClassName
+		val pseudoClassName = if(pseudoClassAnnotationValue !== null) pseudoClassAnnotationValue.transformPseudoClassName
 
 		if (pseudoClass) {
 			field.declaringType.addPseudoClass(field, pseudoClassAnnotationValue)
@@ -191,7 +191,7 @@ class BindablePropertyProcessor extends AbstractFieldProcessor {
 			return
 		}
 
-		if (field.initializer == null) {
+		if (field.initializer === null) {
 			field.addError('''Styleable properties must have an initial value''')
 			return
 		}
@@ -212,7 +212,7 @@ class BindablePropertyProcessor extends AbstractFieldProcessor {
 		val styleInfo = field.collectStyleInfo(propertyName, accessor, metadataName, selector, field.initializer,
 			clazz.newTypeReference, fieldType, supertype, fieldType)
 
-		if (styleInfo == null) {
+		if (styleInfo === null) {
 			field.addError('''Style conversion for type «fieldType.name» not yet implemented.''')
 		} else {
 
@@ -227,13 +227,13 @@ class BindablePropertyProcessor extends AbstractFieldProcessor {
 
 		val annotationType = annotationClass.newTypeReference?.type
 
-		if (annotationType == null) {
+		if (annotationType === null) {
 			return false
 		}
 
 		val theAnnotation = field.findAnnotation(annotationType)
 
-		return theAnnotation != null
+		return theAnnotation !== null
 	}
 
 }

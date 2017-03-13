@@ -57,7 +57,7 @@ class LayoutSelector extends ChoiceBox<Layout> {
 		]
 
 		selectionModel.selectedItemProperty >> [
-			if(file == null) {
+			if(file === null) {
 				selectLayoutDir(scene.window)
 			} else {
 				consumer.accept(file.toURI.toURL)

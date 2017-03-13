@@ -109,9 +109,9 @@ class GuiceBuilder<T> extends AbstractMap<String, Object> implements Builder<T> 
 			val setter = setters.get(key)
 			val getter = getters.get(key)
 
-			val type = if(setter != null) setter.parameterTypes.head else if(getter != null) getter.returnType
+			val type = if(setter !== null) setter.parameterTypes.head else if(getter !== null) getter.returnType
 
-			if (type != null) {
+			if (type !== null) {
 				try {
 					val theValue = if (type.array) {
 							val List<?> list = if (value instanceof List<?>) {
@@ -148,7 +148,7 @@ class GuiceBuilder<T> extends AbstractMap<String, Object> implements Builder<T> 
 	}
 
 	override containsKey(Object key) {
-		getTemporaryContainer(key.toString) != null
+		getTemporaryContainer(key.toString) !== null
 	}
 
 	override get(Object key) {
@@ -172,11 +172,11 @@ class GuiceBuilder<T> extends AbstractMap<String, Object> implements Builder<T> 
 
 	private def Object getReadOnlyProperty(String propName) {
 
-		if(setters.get(propName) != null) return null;
+		if(setters.get(propName) !== null) return null;
 
 		var getter = getters.get(propName);
 
-		if (getter == null) {
+		if (getter === null) {
 
 			var Method setter = null;
 			val suffix = Character.toUpperCase(propName.charAt(0)) + propName.substring(1);
@@ -186,17 +186,17 @@ class GuiceBuilder<T> extends AbstractMap<String, Object> implements Builder<T> 
 				setter = type.method('''set«suffix»''', #[getter.returnType])
 			} catch (Exception x) {
 			}
-			if (getter != null) {
+			if (getter !== null) {
 				getters.put(propName, getter);
 				setters.put(propName, setter);
 			}
-			if(setter != null) return null;
+			if(setter !== null) return null;
 		}
 
 		var Class<?> type
-		if (getter == null) {
+		if (getter === null) {
 			val Method m = findMethod(propName)
-			if (m == null) {
+			if (m === null) {
 				return null
 			}
 			type = m.parameterTypes.head

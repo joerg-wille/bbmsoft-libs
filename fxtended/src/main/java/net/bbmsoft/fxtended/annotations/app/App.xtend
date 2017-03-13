@@ -23,7 +23,7 @@ class AppCompilationParticipant extends AbstractClassProcessor {
 
 		val appRef = Application.newTypeReference
 
-		if(appRef == null) {
+		if(appRef === null) {
 			annotation.addError('''Required class javafx.application.Application is not on the classpath.''')
 			return
 		}

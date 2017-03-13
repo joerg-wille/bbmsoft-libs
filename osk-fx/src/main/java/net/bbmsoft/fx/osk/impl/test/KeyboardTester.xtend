@@ -52,7 +52,7 @@ class KeyboardTester extends BorderPane {
 	}
 
 	private def initBoard() {
-		if (boardLayout != null && keyLayout != null) {
+		if (boardLayout !== null && keyLayout !== null) {
 			try {
 				this.keyboardHolder.children.all = new OSK(boardLayout, keyLayout, true) => [
 					attach(textField)
