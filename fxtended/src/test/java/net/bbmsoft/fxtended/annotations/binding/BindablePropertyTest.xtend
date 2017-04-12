@@ -5,7 +5,7 @@ import org.junit.Test
 
 class BindablePropertyTest {
 
-	extension XtendCompilerTester compilerTester = XtendCompilerTester.newXtendCompilerTester(BindableProperty)
+	extension XtendCompilerTester compilerTester = XtendCompilerTester.newXtendCompilerTester(BindableProperty.classLoader)
 
 	@Test
 	def void testFXBeanDefaultEmptyString() {
@@ -338,7 +338,7 @@ class BindablePropertyTest {
 			  private final static Boolean cssInitialized = initializeCss();
 			  
 			  private static final Boolean initializeCss() {
-			    java.util.List<javafx.css.CssMetaData<? extends javafx.css.Styleable, ?>> temp = com.google.common.collect.Lists.newArrayList(Pane.getClassCssMetaData());
+			    java.util.List<javafx.css.CssMetaData<? extends javafx.css.Styleable, ? extends java.lang.Object>> temp = com.google.common.collect.Lists.newArrayList(Pane.getClassCssMetaData());
 			    temp.add(SOMETHING);
 			    cssMetaDataList = java.util.Collections.unmodifiableList(temp);
 			    return true;
@@ -453,7 +453,7 @@ class BindablePropertyTest {
 			  private final static Boolean cssInitialized = initializeCss();
 			  
 			  private static final Boolean initializeCss() {
-			    java.util.List<javafx.css.CssMetaData<? extends javafx.css.Styleable, ?>> temp = com.google.common.collect.Lists.newArrayList(Pane.getClassCssMetaData());
+			    java.util.List<javafx.css.CssMetaData<? extends javafx.css.Styleable, ? extends java.lang.Object>> temp = com.google.common.collect.Lists.newArrayList(Pane.getClassCssMetaData());
 			    temp.add(SOMETHING);
 			    temp.add(SOMETHINGELSE);
 			    cssMetaDataList = java.util.Collections.unmodifiableList(temp);
@@ -558,7 +558,7 @@ class BindablePropertyTest {
 			  }
 			  
 			  private final static CssMetaData<Item, Something> SOMETHING = new javafx.css.CssMetaData<Item, net.bbmsoft.fxtended.annotations.binding.Something>(
-			    "-something", net.bbmsoft.fxtended.annotations.binding.StyleableEnumHelper.getEnumConverter(net.bbmsoft.fxtended.annotations.binding.Something.class), Something.A) {
+			    "-something", net.bbmsoft.fxtended.annotations.binding.impl.StyleableEnumHelper.getEnumConverter(net.bbmsoft.fxtended.annotations.binding.Something.class), Something.A) {
 			    
 			      @Override
 			      public boolean isSettable(Item styleable) {
@@ -577,7 +577,7 @@ class BindablePropertyTest {
 			  private final static Boolean cssInitialized = initializeCss();
 			  
 			  private static final Boolean initializeCss() {
-			    java.util.List<javafx.css.CssMetaData<? extends javafx.css.Styleable, ?>> temp = com.google.common.collect.Lists.newArrayList(Pane.getClassCssMetaData());
+			    java.util.List<javafx.css.CssMetaData<? extends javafx.css.Styleable, ? extends java.lang.Object>> temp = com.google.common.collect.Lists.newArrayList(Pane.getClassCssMetaData());
 			    temp.add(SOMETHING);
 			    cssMetaDataList = java.util.Collections.unmodifiableList(temp);
 			    return true;

@@ -45,7 +45,7 @@ import javafx.css.StyleableObjectProperty
 import javafx.css.StyleableStringProperty
 import javafx.scene.paint.Paint
 import javafx.scene.text.Font
-import net.bbmsoft.fxtended.annotations.binding.StyleableEnumHelper
+import net.bbmsoft.fxtended.annotations.binding.impl.StyleableEnumHelper
 import org.eclipse.xtend.lib.macro.TransformationContext
 import org.eclipse.xtend.lib.macro.declaration.MutableFieldDeclaration
 import org.eclipse.xtend.lib.macro.declaration.TypeReference
