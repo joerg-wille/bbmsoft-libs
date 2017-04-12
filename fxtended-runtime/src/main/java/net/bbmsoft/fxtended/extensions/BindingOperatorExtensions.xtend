@@ -125,7 +125,7 @@ class BindingOperatorExtensions {
 			consumer.apply(oldVal, newVal)
 		]
 		a.addListener(listener)
-		if(a.value != null) consumer.apply(null, a.value)
+		if(a.value !== null) consumer.apply(null, a.value)
 		return listener
 	}
 
@@ -538,7 +538,7 @@ class BindingOperatorExtensions {
 	
 		private def initialize(ObservableValue<E> property) {
 			val value = property.value
-			if(value != null) {
+			if(value !== null) {
 				value.class.enumConstants.forEach[
 					PseudoClass.getPseudoClass(toString.toLowerCase(Locale.US)) => [className |
 						pseudoClasses.put(it as E, className)
@@ -562,7 +562,7 @@ class BindingOperatorExtensions {
 		}
 		
 		private def handleChange(E oldValue, E newValue) {
-			if (oldValue != null) {
+			if (oldValue !== null) {
 				val oldPseudoClass = pseudoClasses.get(oldValue) ?:
 					(PseudoClass.getPseudoClass(newValue.toString.toLowerCase(Locale.US)) => [
 						pseudoClasses.put(oldValue, it)
@@ -570,7 +570,7 @@ class BindingOperatorExtensions {
 				node.pseudoClassStateChanged(oldPseudoClass, false)
 			}
 			
-			if (newValue != null) {
+			if (newValue !== null) {
 				val newPseudoClass = pseudoClasses.get(newValue) ?:
 					(PseudoClass.getPseudoClass(newValue.toString.toLowerCase(Locale.US)) => [
 						pseudoClasses.put(newValue, it)

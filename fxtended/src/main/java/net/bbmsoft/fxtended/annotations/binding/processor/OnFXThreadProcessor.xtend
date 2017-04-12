@@ -45,7 +45,7 @@ class OnFXThreadProcessor extends AbstractMethodProcessor {
 
 	private def String findAvailableName(MutableMethodDeclaration annotatedMethod, String methodName) {
 
-		if(annotatedMethod.declaringType.declaredMethods.findFirst[simpleName == methodName] == null) {
+		if(annotatedMethod.declaringType.declaredMethods.findFirst[simpleName == methodName] === null) {
 			methodName
 		} else {
 			annotatedMethod.findAvailableName('''_«methodName»''')

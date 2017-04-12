@@ -30,7 +30,7 @@ class FXMLRootCompilationParticipant extends AbstractClassProcessor {
 //
 //		val initializeMethodName = 'initialize'
 //
-//		if(declaredMethods.findFirst[isInitializeMethod(initializeMethodName, context)] == null) {
+//		if(declaredMethods.findFirst[isInitializeMethod(initializeMethodName, context)] === null) {
 //			addMethod(initializeMethodName)[
 //				visibility = Visibility.PUBLIC
 //				static = false

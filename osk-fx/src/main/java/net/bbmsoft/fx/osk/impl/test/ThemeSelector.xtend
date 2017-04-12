@@ -52,9 +52,9 @@ class ThemeSelector extends ChoiceBox<Theme> {
 		]
 
 		selectionModel.selectedItemProperty >> [ o, oldVal, newVal |
-			if(oldVal != null && oldVal.file != null) scene?.stylesheets?.remove(oldVal.file.toURI.toURL.toExternalForm)
-			if (newVal != null) {
-				if (newVal.file == null) {
+			if(oldVal !== null && oldVal.file !== null) scene?.stylesheets?.remove(oldVal.file.toURI.toURL.toExternalForm)
+			if (newVal !== null) {
+				if (newVal.file === null) {
 					selectThemeDir(scene.window)
 				} else {
 					scene?.stylesheets?.add(newVal.file.toURI.toURL.toExternalForm)

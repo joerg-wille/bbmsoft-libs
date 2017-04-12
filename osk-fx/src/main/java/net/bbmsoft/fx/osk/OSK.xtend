@@ -127,9 +127,9 @@ class OSK extends GridPane implements Initializable {
 
 		val boardLoader = new FXMLLoader(boardLayout);
 
-		if(resourceBundleBaseName != null) {
+		if(resourceBundleBaseName !== null) {
 
-			if(bundleClassLoader != null) {
+			if(bundleClassLoader !== null) {
 				boardLoader.resources = ResourceBundle.getBundle(resourceBundleBaseName, locale, bundleClassLoader)
 			} else {
 				boardLoader.resources = ResourceBundle.getBundle(resourceBundleBaseName, locale)
@@ -142,9 +142,9 @@ class OSK extends GridPane implements Initializable {
 
 		val keyLoader = new FXMLLoader(keyLayout);
 
-		if(resourceBundleBaseName != null) {
+		if(resourceBundleBaseName !== null) {
 
-			if(bundleClassLoader != null) {
+			if(bundleClassLoader !== null) {
 				keyLoader.resources = ResourceBundle.getBundle(resourceBundleBaseName, locale, bundleClassLoader)
 			} else {
 				keyLoader.resources = ResourceBundle.getBundle(resourceBundleBaseName, locale)
@@ -179,9 +179,9 @@ class OSK extends GridPane implements Initializable {
 		this.cache = true
 
 		this.initialPositioListener = [
-			if (width > 0 && height > 0 && scene != null) {
+			if (width > 0 && height > 0 && scene !== null) {
 
-				if (this.initialPositioListener != null) {
+				if (this.initialPositioListener !== null) {
 					resetPosition
 					this.widthProperty - this.initialPositioListener
 					this.heightProperty - this.initialPositioListener
@@ -213,7 +213,7 @@ class OSK extends GridPane implements Initializable {
 		val x = sceneX
 		val y = sceneY
 
-		if (lastOffset == null) {
+		if (lastOffset === null) {
 			lastOffset = new Point2D(x, y)
 		} else {
 			val deltaX = x - lastOffset.x
@@ -232,7 +232,7 @@ class OSK extends GridPane implements Initializable {
 			osk = this
 		]
 
-		if (inputIndicator != null) {
+		if (inputIndicator !== null) {
 			inputIndicator.show(false)
 		}
 
@@ -299,7 +299,7 @@ class OSK extends GridPane implements Initializable {
 	@CheckFXThread
 	def void detach() {
 
-		if (inputIndicator != null) {
+		if (inputIndicator !== null) {
 			unbindInputIndicator
 		}
 
@@ -311,12 +311,12 @@ class OSK extends GridPane implements Initializable {
 	}
 
 	def isAttached() {
-		targetScene != null || targetNode != null
+		targetScene !== null || targetNode !== null
 	}
 
 	private def bindInputIndicator() {
 
-		if (inputIndicator != null && inputIndicator != targetNode) {
+		if (inputIndicator !== null && inputIndicator != targetNode) {
 
 			unbindInputIndicator
 
@@ -362,12 +362,12 @@ class OSK extends GridPane implements Initializable {
 
 		if (targetControl instanceof TextInputControl) {
 
-			if(targetTextListener != null) targetControl.textProperty - targetTextListener
-			if(localTextListener != null) inputIndicator.textProperty - localTextListener
-			if(targetCaretListener != null) targetControl.caretPositionProperty - targetCaretListener
-			if(targetSelectionListener != null) targetControl.selectionProperty - targetSelectionListener
-			if(localCaretListener != null) inputIndicator.caretPositionProperty - localCaretListener
-			if(localSelectionListener != null) inputIndicator.selectionProperty - localSelectionListener
+			if(targetTextListener !== null) targetControl.textProperty - targetTextListener
+			if(localTextListener !== null) inputIndicator.textProperty - localTextListener
+			if(targetCaretListener !== null) targetControl.caretPositionProperty - targetCaretListener
+			if(targetSelectionListener !== null) targetControl.selectionProperty - targetSelectionListener
+			if(localCaretListener !== null) inputIndicator.caretPositionProperty - localCaretListener
+			if(localSelectionListener !== null) inputIndicator.selectionProperty - localSelectionListener
 
 			if (inputIndicator instanceof TextField) {
 				inputIndicator.onAction = null

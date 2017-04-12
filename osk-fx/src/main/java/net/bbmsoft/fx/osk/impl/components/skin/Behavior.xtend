@@ -233,7 +233,7 @@ class Behavior {
 			if (!target.focused) {
 				target.requestFocus
 				if (target instanceof TextInputControl) {
-					if(target.text != null) target.positionCaret(target.text.length)
+					if(target.text !== null) target.positionCaret(target.text.length)
 				}
 			}
 		}

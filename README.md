@@ -1,5 +1,7 @@
 # BBMSoft Libraries
-[![Build Status](https://travis-ci.org/babymotte/bbmsoft-libs.svg?branch=master)](https://travis-ci.org/babymotte/bbmsoft-libs)
+
+[![Build Status](https://travis-ci.org/babymotte/bbmsoft-libs.svg?branch=develop)](https://travis-ci.org/babymotte/bbmsoft-libs)
+
 ## A Collection of reusable software components (mostly for JavaFX Applications)
 
 This will be split up into separate projects/repositories in the (hopefully) near future and then I will probably also take the time to write some proper documentation.

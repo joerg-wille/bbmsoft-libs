@@ -45,7 +45,7 @@ class BindablePropertyCssMetadataHelper {
 
 		val converterInitializer = field.makeConverterInitializer(propertyType)
 
-		if (converterInitializer != null) {
+		if (converterInitializer !== null) {
 			val control = classType.isAssignableFrom(Control.newTypeReference)
 
 			new StyleableFieldInfo(propertyName, propertyAccessor, metadataName, selector, initializer, classType,
@@ -197,7 +197,7 @@ class BindablePropertyCssMetadataHelper {
 	}
 
 	private def hasField(MutableClassDeclaration it, String fieldName) {
-		findField(fieldName) != null
+		findField(fieldName) !== null
 	}
 
 	private def findField(MutableClassDeclaration it, String fieldName) {

@@ -62,7 +62,7 @@ class KeyButtonSkin extends SkinBase<KeyButton> {
 		new Label => [
 			columnIndex = 0
 			rowIndex = 1
-			if(shiftChar == null) {
+			if(shiftChar === null) {
 				columnSpan = 2
 				rowSpan = 2
 			}
@@ -80,7 +80,7 @@ class KeyButtonSkin extends SkinBase<KeyButton> {
 
 		val shiftChar = key.osk.getLayout.keyMap.get(key.code)?.shiftChar
 
-		if(shiftChar != null) {
+		if(shiftChar !== null) {
 			new Label => [
 				columnIndex = 0
 				rowIndex = 0
@@ -98,7 +98,7 @@ class KeyButtonSkin extends SkinBase<KeyButton> {
 
 		val altChar = key.osk.getLayout.keyMap.get(key.code)?.altChar
 
-		if(altChar != null && !altChar.empty) {
+		if(altChar !== null && !altChar.empty) {
 			new Label => [
 				columnIndex = 1
 				rowIndex = 1
@@ -122,10 +122,10 @@ class KeyButtonSkin extends SkinBase<KeyButton> {
 				prefWidthProperty << key.baseSizeProperty.multiply(key.sizeFactorProperty)
 				prefHeightProperty << key.baseSizeProperty.multiply(key.heightFactorProperty)
 
-				if(icon != null) children.add = icon
-				if(defaultCharLabel != null) children.add = defaultCharLabel
-				if(shiftCharLabel != null) children.add = shiftCharLabel
-				if(altCharLabel != null) children.add = altCharLabel
+				if(icon !== null) children.add = icon
+				if(defaultCharLabel !== null) children.add = defaultCharLabel
+				if(shiftCharLabel !== null) children.add = shiftCharLabel
+				if(altCharLabel !== null) children.add = altCharLabel
 
 				styleClass.add = 'key-grid'
 			]

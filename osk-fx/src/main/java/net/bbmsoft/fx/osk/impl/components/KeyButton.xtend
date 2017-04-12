@@ -51,10 +51,10 @@ class KeyButton extends Control {
 
 	private def keyChanged(KeyCode oldCode, KeyCode newCode) {
 
-		if(oldCode != null) styleClass.remove(oldCode.toString.toLowerCase(Locale.US))
-		if(newCode != null) styleClass.add(newCode.toString.toLowerCase(Locale.US))
+		if(oldCode !== null) styleClass.remove(oldCode.toString.toLowerCase(Locale.US))
+		if(newCode !== null) styleClass.add(newCode.toString.toLowerCase(Locale.US))
 
-		this.visible = newCode != null
+		this.visible = newCode !== null
 	}
 
 }

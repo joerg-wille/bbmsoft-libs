@@ -59,7 +59,7 @@ class GlobalApplicationHost extends Application {
 
 		synchronized (GlobalApplicationHost) {
 
-			if (GlobalApplicationHost.instance == null) {
+			if (GlobalApplicationHost.instance === null) {
 				throw new IllegalStateException(
 					'Global Application Host not running! Call GlobalApplicationHost.create(...) before starting subapplications.')
 			}
@@ -74,7 +74,7 @@ class GlobalApplicationHost extends Application {
 
 		synchronized (GlobalApplicationHost) {
 
-			if (GlobalApplicationHost.instance == null) {
+			if (GlobalApplicationHost.instance === null) {
 				throw new IllegalStateException(
 					'Global Application Host not running! Call GlobalApplicationHost.create(...) before starting subapplications.')
 			}
@@ -97,7 +97,7 @@ class GlobalApplicationHost extends Application {
 
 		synchronized (GlobalApplicationHost) {
 
-			if (GlobalApplicationHost.instance == null) {
+			if (GlobalApplicationHost.instance === null) {
 				throw new IllegalStateException(
 					'Global Application Host not running! Call GlobalApplicationHost.create(...) before starting subapplications.')
 			}
@@ -111,7 +111,7 @@ class GlobalApplicationHost extends Application {
 
 		synchronized (GlobalApplicationHost) {
 
-			if (GlobalApplicationHost.instance == null) {
+			if (GlobalApplicationHost.instance === null) {
 				throw new IllegalStateException(
 					'Global Application Host not running! Call GlobalApplicationHost.create(...) before starting subapplications.')
 			}
@@ -150,7 +150,7 @@ class GlobalApplicationHost extends Application {
 
 		_implUnregisterWindow(subapplication, window)
 
-		val notQuit = this.windows.get(subapplication) != null
+		val notQuit = this.windows.get(subapplication) !== null
 		val allWindows = this.windows.get(subapplication)
 		val allWindowsClosed = allWindows.empty
 
@@ -163,7 +163,7 @@ class GlobalApplicationHost extends Application {
 
 		_implUnregisterDialog(subapplication, dialog)
 
-		val notQuit = this.windows.get(subapplication) != null
+		val notQuit = this.windows.get(subapplication) !== null
 		val allWindows = this.windows.get(subapplication)
 		val allDialogs = this.dialogs.get(subapplication)
 		val allWindowsClosed = allWindows.empty

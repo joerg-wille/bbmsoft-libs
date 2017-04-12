@@ -15,7 +15,7 @@ import org.eclipse.xtend.lib.macro.declaration.Visibility
 class CheckFXThreadProcessor implements TransformationParticipant<MutableMemberDeclaration> {
 
 	override doTransform(List<? extends MutableMemberDeclaration> elements, extension TransformationContext context) {
-		elements.forEach[if(it != null) transform(context)]
+		elements.forEach[if(it !== null) transform(context)]
 	}
 
 	private def dispatch void transform(MutableMemberDeclaration it, extension TransformationContext context) {
@@ -29,7 +29,7 @@ class CheckFXThreadProcessor implements TransformationParticipant<MutableMemberD
 			return
 		}
 
-		if(annotatedMethod.returnType == null) {
+		if(annotatedMethod.returnType === null) {
 			annotatedMethod.addWarning('''Cannot add thread check on Method with inferred return type. Please specify explicit return type!''')
 			return
 		}
@@ -61,7 +61,7 @@ class CheckFXThreadProcessor implements TransformationParticipant<MutableMemberD
 
 	private def String findAvailableName(MutableMethodDeclaration annotatedMethod, String methodName) {
 
-		if(annotatedMethod.declaringType.declaredMethods.findFirst[simpleName == methodName] == null) {
+		if(annotatedMethod.declaringType.declaredMethods.findFirst[simpleName == methodName] === null) {
 			methodName
 		} else {
 			annotatedMethod.findAvailableName('''_«methodName»''')

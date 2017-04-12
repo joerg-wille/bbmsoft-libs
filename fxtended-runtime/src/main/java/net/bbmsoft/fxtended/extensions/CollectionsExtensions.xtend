@@ -54,8 +54,8 @@ class CollectionsExtensions {
 		a.addListener[MapChangeListener.Change<? extends U, ? extends T> it |
 			val added = valueAdded
 			val removed = valueRemoved
-			if(removed != null) b.remove(removed)
-			if(added != null) b.add(added)
+			if(removed !== null) b.remove(removed)
+			if(added !== null) b.add(added)
 		]
 	}
 	
@@ -63,8 +63,8 @@ class CollectionsExtensions {
 		a.addListener[MapChangeListener.Change<? extends U, ? extends T> it |
 			val added = valueAdded
 			val removed = valueRemoved
-			if(removed != null) b.remove(removed.apply)
-			if(added != null) b.add(added.apply)
+			if(removed !== null) b.remove(removed.apply)
+			if(added !== null) b.add(added.apply)
 		]
 	}
 	
@@ -90,8 +90,8 @@ class CollectionsExtensions {
 		b.addListener[MapChangeListener.Change<? extends U, ? extends T> it |
 			val added = valueAdded
 			val removed = valueRemoved
-			if(removed != null) a.remove(removed)
-			if(added != null) a.add(added)
+			if(removed !== null) a.remove(removed)
+			if(added !== null) a.add(added)
 		]
 	}
 	
@@ -99,8 +99,8 @@ class CollectionsExtensions {
 		b.addListener[MapChangeListener.Change<? extends U, ? extends T> it |
 			val added = valueAdded
 			val removed = valueRemoved
-			if(removed != null) a.remove(removed.apply)
-			if(added != null) a.add(added.apply)
+			if(removed !== null) a.remove(removed.apply)
+			if(added !== null) a.add(added.apply)
 		]
 	}
 }

@@ -107,14 +107,14 @@ class AccessorsHelper {
 					'''
 				}
 
-				val invalidated = if(pseudoClassName != null) '''
+				val invalidated = if(pseudoClassName !== null) '''
 					{
 						@Override protected void invalidated() {
 							«checkFXbody»
 							pseudoClassStateChanged(«pseudoClassName», get());
 						}
 					}
-				''' else if(invalidatedMethodName != null) '''
+				''' else if(invalidatedMethodName !== null) '''
 					{
 						@Override protected void invalidated() {
 							«checkFXbody»
