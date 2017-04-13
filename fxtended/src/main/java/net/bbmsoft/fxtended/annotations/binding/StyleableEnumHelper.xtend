@@ -1,4 +1,4 @@
-package net.bbmsoft.fxtended.annotations.binding.impl
+package net.bbmsoft.fxtended.annotations.binding
 
 import com.sun.javafx.css.converters.EnumConverter
 import javafx.css.StyleConverter
