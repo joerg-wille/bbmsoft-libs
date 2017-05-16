@@ -101,6 +101,32 @@
 				<module>osk-fx</module>
 			</modules>
 		</profile>
+		<profile>
+			<id>no-fx-imports</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.felix</groupId>
+						<artifactId>maven-bundle-plugin</artifactId>
+						<version>3.2.0</version>
+						<executions>
+							<execution>
+								<id>bundle-manifest</id>
+								<phase>process-classes</phase>
+								<goals>
+									<goal>manifest</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<instructions>
+								<Import-Package>!javafx.*,!com.sun.*,*</Import-Package>
+							</instructions>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
 	</profiles>
 
 	<build>

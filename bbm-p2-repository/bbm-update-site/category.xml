@@ -3,19 +3,19 @@
    <description name="BBM Libraries" url="http://p2.babymotte.de/">
       BBM Libraries
    </description>
-   <bundle id="net.bbmsoft.fxtended" version="1.4.0" label="FXtended">
+   <bundle id="net.bbmsoft.fxtended" version="1.4.1" label="FXtended">
       <category name="fxtended"/>
    </bundle>
-   <bundle id="net.bbmsoft.fxtended-runtime" version="1.3.0" label="FXtended Runtime">
+   <bundle id="net.bbmsoft.fxtended-runtime" version="1.3.1" label="FXtended Runtime">
       <category name="fxtended"/>
    </bundle>
-   <bundle id="net.bbmsoft.fxml-inject" version="1.3.0" label="FXML Inject">
+   <bundle id="net.bbmsoft.fxml-inject" version="1.3.1" label="FXML Inject">
       <category name="fxtended"/>
    </bundle>
-   <bundle id="net.bbmsoft.osk-fx" version="1.2.1" label="OSK">
+   <bundle id="net.bbmsoft.osk-fx" version="1.2.2" label="OSK">
       <category name="osk"/>
    </bundle>
-   <bundle id="net.bbmsoft.bbm-utils" version="1.1.0">
+   <bundle id="net.bbmsoft.bbm-utils" version="1.1.1">
       <category name="bbm-utils"/>
    </bundle>
    <category-def name="fxtended" label="FXtended">

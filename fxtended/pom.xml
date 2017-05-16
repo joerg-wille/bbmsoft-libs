@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>fxtended</artifactId>
-	<version>1.4.0</version>
+	<version>1.4.1</version>
 	<name>FXtended</name>
 	<description>A collection of utility and extension classes and active annotations for general purpose and JavaFX 8 programming in the Xtend programming language.</description>
 
