@@ -6,7 +6,7 @@
 
 	<groupId>net.bbmsoft</groupId>
 	<artifactId>bbm-libs</artifactId>
-	<version>1.1.0</version>
+	<version>1.2.0</version>
 	<name>BBM-Software Libraries parent project</name>
 
 	<properties>
@@ -122,6 +122,14 @@
 							<instructions>
 								<Import-Package>!javafx.*,!com.sun.*,*</Import-Package>
 							</instructions>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-jar-plugin</artifactId>
+						<version>3.0.2</version>
+						<configuration>
+						  <classifier>no-fx-imports</classifier>
 						</configuration>
 					</plugin>
 				</plugins>
