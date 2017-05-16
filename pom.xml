@@ -13,7 +13,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 		<xtend.version>2.11.0</xtend.version>
-		<jar.plugin.version>3.2.0</jar.plugin.version>
+		<jar.plugin.version>3.0.2</jar.plugin.version>
 	</properties>
 
 	<packaging>pom</packaging>
@@ -108,7 +108,7 @@
 					<plugin>
 						<groupId>org.apache.felix</groupId>
 						<artifactId>maven-bundle-plugin</artifactId>
-						<version>${jar.plugin.version}</version>
+						<version>3.2.0</version>
 						<executions>
 							<execution>
 								<id>bundle-manifest</id>
@@ -127,7 +127,7 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-jar-plugin</artifactId>
-						<version>3.0.2</version>
+						<version>${jar.plugin.version}</version>
 						<configuration>
 						  <classifier>no-fx-imports</classifier>
 						</configuration>
