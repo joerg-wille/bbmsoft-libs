@@ -40,7 +40,7 @@ class GlobalApplicationHost extends Application {
 
 		if (!created) {
 
-			new Thread[Application.launch(args)] => [
+			new Thread[Application.launch(GlobalApplicationHost, args)] => [
 				name = 'Global Application Host Thread'
 				start
 			]
