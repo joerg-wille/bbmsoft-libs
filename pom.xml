@@ -6,14 +6,15 @@
 
 	<groupId>net.bbmsoft</groupId>
 	<artifactId>bbm-libs</artifactId>
-	<version>1.2.0</version>
+	<version>1.2.1</version>
 	<name>BBM-Software Libraries parent project</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
-		<xtend.version>2.11.0</xtend.version>
+		<xtend.version>2.12.0</xtend.version>
 		<jar.plugin.version>3.0.2</jar.plugin.version>
+                <guava.version>18.0</guava.version>
 	</properties>
 
 	<packaging>pom</packaging>
@@ -30,7 +31,7 @@
 			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
-				<version>15.0</version>
+				<version>${guava.version}</version>
 			</dependency>
 
 			<dependency>
@@ -85,8 +86,13 @@
 				<artifactId>org.eclipse.xtext.xbase.testing</artifactId>
 				<version>${xtend.version}</version>
 				<scope>test</scope>
+				<exclusions>
+				        <exclusion>
+                                                <groupId>org.eclipse.lsp4j</groupId>
+                                                <artifactId>*</artifactId>
+				        </exclusion>
+				</exclusions>
 			</dependency>
-
 		</dependencies>
 	</dependencyManagement>
 
@@ -118,11 +124,11 @@
 								</goals>
 							</execution>
 						</executions>
-						<configuration>
+						<!--configuration>
 							<instructions>
 								<Import-Package>!javafx.*,!com.sun.*,*</Import-Package>
 							</instructions>
-						</configuration>
+						</configuration-->
 					</plugin>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
