@@ -5,14 +5,14 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>fxtended</artifactId>
-	<version>1.4.2</version>
+	<version>1.4.3</version>
 	<name>FXtended</name>
 	<description>A collection of utility and extension classes and active annotations for general purpose and JavaFX 8 programming in the Xtend programming language.</description>
 
 	<parent>
 		<groupId>net.bbmsoft</groupId>
 		<artifactId>bbm-libs</artifactId>
-		<version>1.2.0</version>
+		<version>1.2.1</version>
 	</parent>
 
 	<dependencies>

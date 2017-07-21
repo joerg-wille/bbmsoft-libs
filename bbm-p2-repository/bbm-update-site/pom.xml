@@ -9,7 +9,7 @@
 	<parent>
 		<groupId>net.bbmsoft</groupId>
 		<artifactId>bbm-p2-repository</artifactId>
-		<version>1.0.4</version>
+		<version>1.2.1</version>
 	</parent>
 
 	<packaging>eclipse-repository</packaging>
@@ -19,42 +19,41 @@
 		<dependency>
 			<groupId>net.bbmsoft</groupId>
 			<artifactId>fxtended</artifactId>
-			<version>1.4.2</version>
+			<version>1.4.3</version>
 			<classifier>no-fx-imports</classifier>
 		</dependency>
 
 		<dependency>
 			<groupId>net.bbmsoft</groupId>
 			<artifactId>fxtended-runtime</artifactId>
-			<version>1.3.2</version>
+			<version>1.3.3</version>
 			<classifier>no-fx-imports</classifier>
 		</dependency>
 
 		<dependency>
 			<groupId>net.bbmsoft</groupId>
 			<artifactId>fxml-inject</artifactId>
-			<version>1.3.2</version>
+			<version>1.3.3</version>
 			<classifier>no-fx-imports</classifier>
 		</dependency>
 
 		<dependency>
 			<groupId>net.bbmsoft</groupId>
 			<artifactId>osk-fx</artifactId>
-			<version>1.2.3</version>
+			<version>1.2.4</version>
 			<classifier>no-fx-imports</classifier>
 		</dependency>
 
 		<dependency>
 			<groupId>net.bbmsoft</groupId>
 			<artifactId>bbm-utils</artifactId>
-			<version>1.1.2</version>
+			<version>1.1.3</version>
 			<classifier>no-fx-imports</classifier>
 		</dependency>
 
 		<dependency>
 			<groupId>org.eclipse.xtend</groupId>
 			<artifactId>org.eclipse.xtend.lib</artifactId>
-			<version>2.11.0</version>
 		</dependency>
 
 	</dependencies>
