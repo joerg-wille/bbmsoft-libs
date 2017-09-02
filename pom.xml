@@ -124,11 +124,11 @@
 								</goals>
 							</execution>
 						</executions>
-						<!--configuration>
+						<configuration>
 							<instructions>
 								<Import-Package>!javafx.*,!com.sun.*,*</Import-Package>
 							</instructions>
-						</configuration-->
+						</configuration>
 					</plugin>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>

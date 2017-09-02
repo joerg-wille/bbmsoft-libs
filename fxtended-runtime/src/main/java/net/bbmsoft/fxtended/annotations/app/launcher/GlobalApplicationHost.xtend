@@ -40,7 +40,7 @@ class GlobalApplicationHost extends Application {
 
 		if (!created) {
 
-			new Thread[Application.launch(args)] => [
+			new Thread[Application.launch(GlobalApplicationHost, args)] => [
 				name = 'Global Application Host Thread'
 				start
 			]
@@ -80,17 +80,21 @@ class GlobalApplicationHost extends Application {
 			}
 		}
 
-		val latch = new CountDownLatch(1)
+		if (Platform.fxApplicationThread) {
+			instance._implQuitSubapplication(subapplication)
+		} else {
+			val latch = new CountDownLatch(1)
 
-		Platform.runLater [
-			try {
-				instance._implQuitSubapplication(subapplication)
-			} finally {
-				latch.countDown
-			}
-		]
+			Platform.runLater [
+				try {
+					instance._implQuitSubapplication(subapplication)
+				} finally {
+					latch.countDown
+				}
+			]
 
-		latch.await
+			latch.await
+		}
 	}
 
 	protected def static void registerWindow(Subapplication subapplication, Window window) {

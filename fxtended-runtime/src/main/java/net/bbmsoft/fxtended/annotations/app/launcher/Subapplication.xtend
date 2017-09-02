@@ -28,7 +28,7 @@ abstract class Subapplication {
 	}
 
 	def static Subapplication launch(Class<? extends Subapplication> clazz) {
-		GlobalApplicationHost.launchSubapplication(clazz as Class<? extends Subapplication>)
+		GlobalApplicationHost.launchSubapplication(clazz)
 	}
 
 	def static Subapplication launch() {
